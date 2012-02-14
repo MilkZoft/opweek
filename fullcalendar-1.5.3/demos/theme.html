@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='cupertino/theme.css' />
+		<link rel='stylesheet' type='text/css' href='../fullcalendar/fullcalendar.css' />
+		<link rel='stylesheet' type='text/css' href='../fullcalendar/fullcalendar.print.css' media='print' />
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+		<script type='text/javascript' src='../jquery/jquery-1.7.1.min.js'></script>
+		<script type='text/javascript' src='../jquery/jquery-ui-1.8.17.custom.min.js'></script>
+		<script type='text/javascript' src='../fullcalendar/fullcalendar.js'></script>
+
+		<script type='text/javascript'>
+
+			$(document).ready(function() {
+					
+				$('#calendar').fullCalendar({
+					theme: true,
+					header: {
+						left: 'prev,next today',
+						center: 'title',
+						right: 'month,agendaWeek,agendaDay'
+					},
+					editable: true,
+					events: [
+						//Primer Día
+						{
+							color: '#BADA55',
+							title: '6:00pm - Maquetación Web: ',
+							start: new Date(2012, 2, 5),
+							url: 'http://google.com/'
+						},
+						{
+							color: '#BADADD',
+							title: 'HTML5 ',
+							start: new Date(2012, 2, 5),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'CSS3 ',
+							start: new Date(2012, 2, 5),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Bootstrap ',
+							start: new Date(2012, 2, 5),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Modernizr ',
+							start: new Date(2012, 2, 5),
+							url: 'http://google.com/'
+						},
+						
+						//Segundo Día
+						{
+							color: '#BADA55',
+							title: '6:00pm - Desarrollo de aplicaciones con ZanPHP: ',
+							start: new Date(2012, 2, 6),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Instalación',
+							start: new Date(2012, 2, 6),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Introducción a ZanPHP',
+							start: new Date(2012, 2, 6),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'HMVC',
+							start: new Date(2012, 2, 6),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Creación de un blog con ZanPHP',
+							start: new Date(2012, 2, 6),
+							url: 'http://google.com/'
+						},
+						
+						//Tercer Día
+						{
+							color: '#BADA55',
+							title: '6:00pm - jQuery: ',
+							start: new Date(2012, 2, 7),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Instalación',
+							start: new Date(2012, 2, 7),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Selectores',
+							start: new Date(2012, 2, 7),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Sizzle',
+							start: new Date(2012, 2, 7),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Efectos',
+							start: new Date(2012, 2, 7),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Galería de Imágenes',
+							start: new Date(2012, 2, 7),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'AJAX',
+							start: new Date(2012, 2, 7),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Registro de Usuarios',
+							start: new Date(2012, 2, 7),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Buscador de Usuarios',
+							start: new Date(2012, 2, 7),
+							url: 'http://google.com/'
+						},
+						
+						//Cuarto Día
+						{
+							color: '#BADA55',
+							title: '6:00pm - Mesa redonda sobre E-Marketing: ',
+							start: new Date(2012, 2, 8),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Posicionamiento SEO',
+							start: new Date(2012, 2, 8),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Publicidad online',
+							start: new Date(2012, 2, 8),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Redes Sociales',
+							start: new Date(2012, 2, 8),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Twitter',
+							start: new Date(2012, 2, 8),
+							url: 'http://google.com/'
+						},
+						{
+							title: 'Facebook',
+							start: new Date(2012, 2, 8),
+							url: 'http://google.com/'
+						},
+						
+						//Quinto Día
+						{
+							title: 'Crea tu Sitio WEB con MuuCMS',
+							start: new Date(2012, 2, 9),
+							url: 'http://google.com/'
+						}
+					]
+				}).fullCalendar( 'gotoDate', 2012, 2 );
+					
+			});
+		</script>
+
+		<style type='text/css'>
+
+			body {
+				margin-top: 40px;
+				text-align: center;
+				font-size: 13px;
+				font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+				}
+
+			#calendar {
+				width: 900px;
+				margin: 0 auto;
+				}
+
+		</style>
+	</head>
+	
+	<body>
+		<div id='calendar'></div>
+	</body>
+
+</html>
